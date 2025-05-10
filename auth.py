@@ -1,6 +1,6 @@
 # auth.py
 
-def validateUser(username, password):
+def validateSignin(username, password):
     if username and password:
-        return True
-    return False
+        return {"status": "success"}
+    return {"status": "failure"}
